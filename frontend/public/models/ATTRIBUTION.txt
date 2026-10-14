@@ -1,0 +1,146 @@
+BodyParts3D, (c) The Database Center for Life Science licensed under CC Attribution 4.0 International
+
+Source set: BodyParts3D heart part set, compatibility version heart5.0i
+            129 OBJ files, 93 distinct FMA concepts
+
+PROVENANCE
+These files were supplied locally in 'heart-beat parts/' rather than
+downloaded by this script. Unlike the BodyParts3D PART-OF archive they
+carry no embedded licence notice of their own - their headers record only
+File ID, Representation ID, Concept ID, English name, bounds and volume -
+so the credit line above is the one the BodyParts3D licence page specifies.
+
+Structures used (node -> FMA Concept IDs -> source files):
+  myo_lv_free
+      Left ventricle, free wall  [FMA84850]
+      - MM474_BP51876_FMA84850_Free wall of left ventricle.obj
+      - MM614_BP51876_FMA84850_Free wall of left ventricle.obj
+      - MM615_BP51876_FMA84850_Free wall of left ventricle.obj
+      - MM616_BP51876_FMA84850_Free wall of left ventricle.obj
+      - MM620_BP51876_FMA84850_Free wall of left ventricle.obj
+      - MM621_BP51876_FMA84850_Free wall of left ventricle.obj
+      - MM622_BP51876_FMA84850_Free wall of left ventricle.obj
+      - MM623_BP51876_FMA84850_Free wall of left ventricle.obj
+      - MM624_BP51876_FMA84850_Free wall of left ventricle.obj
+      - MM626_BP51876_FMA84850_Free wall of left ventricle.obj
+      - MM627_BP51876_FMA84850_Free wall of left ventricle.obj
+      - MM628_BP51876_FMA84850_Free wall of left ventricle.obj
+      - MM631_BP51876_FMA84850_Free wall of left ventricle.obj
+  myo_lv_septal
+      Left ventricle, septal wall  [FMA9345]
+      - MM613_BP52013_FMA9345_Septal wall of left ventricle.obj
+      - MM618_BP52013_FMA9345_Septal wall of left ventricle.obj
+      - MM619_BP52013_FMA9345_Septal wall of left ventricle.obj
+      - MM625_BP52013_FMA9345_Septal wall of left ventricle.obj
+      - MM629_BP52013_FMA9345_Septal wall of left ventricle.obj
+      - MM630_BP52013_FMA9345_Septal wall of left ventricle.obj
+  myo_septum
+      Interventricular septum  [FMA7134, FMA83468]
+      - MM594_BP51936_FMA7134_Muscular part of interventricular septum.obj
+      - MM600_BP51936_FMA7134_Muscular part of interventricular septum.obj
+      - MM568_BP51893_FMA83468_Membranous part of interventricular septum proper.obj
+  myo_rv_inflow
+      Right ventricle, inflow wall  [FMA49207]
+      - MM598_BP51861_FMA49207_Wall of inflow part of right ventricle.obj
+  myo_rv_outflow
+      Right ventricle, outflow wall  [FMA49208]
+      - MM538_BP51878_FMA49208_Wall of outflow part of right ventricle.obj
+  atrium_left
+      Left atrium  [FMA9306, FMA84095, FMA9562, FMA49292, FMA9542, FMA9547]
+      - MM456_BP51862_FMA9306_Lateral wall of left atrium.obj
+      - MM458_BP51886_FMA84095_Septal wall of left atrium.obj
+      - MM460_BP51866_FMA9562_Superior wall of left atrium.obj
+      - MM632_BP51844_FMA49292_Anterior wall proper of left atrium.obj
+      - MM633_BP51882_FMA9542_Posterior wall of left atrium.obj
+      - MM459_BP51840_FMA9547_Wall of left auricle.obj
+  atrium_right
+      Right atrium  [FMA49285, FMA49286, FMA84094, FMA49299]
+      - MM559_BP51843_FMA49285_Anterior wall proper of right atrium.obj
+      - MM560_BP51837_FMA49286_Lateral wall proper of right atrium.obj
+      - MM590_BP51888_FMA84094_Septal wall of right atrium.obj
+      - MM591_BP51888_FMA84094_Septal wall of right atrium.obj
+      - MM461_BP51819_FMA49299_Wall of right auricle proper.obj
+  aorta
+      Ascending aorta  [FMA23733, FMA15098]
+      - MM506_BP51985_FMA23733_Ascending aorta proper.obj
+      - MM558_BP51975_FMA15098_Wall of bulb of aorta.obj
+  pulm_trunk
+      Pulmonary trunk  [FMA15086]
+      - MM607_BP58392_FMA15086_Pulmonary trunk proper.obj
+  artery_LAD
+      Left anterior descending  [FMA74912, FMA3860, FMA3888, FMA3890, FMA3893]
+      - MM420_BP51969_FMA74912_Trunk of anterior interventricular branch of left coronary artery.obj
+      - MM424_BP51969_FMA74912_Trunk of anterior interventricular branch of left coronary artery.obj
+      - MM425_BP51969_FMA74912_Trunk of anterior interventricular branch of left coronary artery.obj
+      - MM422_BP51972_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj
+      - MM423_BP51965_FMA3888_Second left anterior branch of anterior interventricular branch of left coronary artery.obj
+      - MM432_BP51962_FMA3890_Third left anterior branch of anterior interventricular branch of left coronary artery.obj
+      - MM431_BP51970_FMA3893_Anterior septal branch of anterior interventricular artery.obj
+      - MM433_BP51970_FMA3893_Anterior septal branch of anterior interventricular artery.obj
+      - MM434_BP51970_FMA3893_Anterior septal branch of anterior interventricular artery.obj
+  artery_LCX
+      Left circumflex  [FMA74923, FMA3902, FMA3914, FMA79742]
+      - MM426_BP51973_FMA74923_Trunk of circumflex branch of left coronary artery.obj
+      - MM635_BP51973_FMA74923_Trunk of circumflex branch of left coronary artery.obj
+      - MM610_BP51926_FMA3902_Left marginal artery.obj
+      - MM428_BP51937_FMA3914_First posterior ventricular branch of circumflex coronary artery.obj
+      - MM430_BP58390_FMA79742_Trunk of posterior interventricular branch of left coronary artery.obj
+  artery_RCA
+      Right coronary artery  [FMA3802, FMA3807, FMA3815, FMA3818, FMA3823, FMA3829, FMA3837, FMA3851]
+      - MM436_BP51977_FMA3802_Trunk of right coronary artery.obj
+      - MM439_BP51977_FMA3802_Trunk of right coronary artery.obj
+      - MM556_BP51977_FMA3802_Trunk of right coronary artery.obj
+      - MM441_BP51955_FMA3807_Conus branch of right coronary artery.obj
+      - MM437_BP51980_FMA3815_First anterior ventricular branch of right coronary artery.obj
+      - MM440_BP51950_FMA3818_Marginal branch of right coronary artery.obj
+      - MM438_BP51922_FMA3823_Sinoatrial nodal branch of right coronary artery.obj
+      - MM445_BP51957_FMA3829_Anterior atrial branch of right coronary artery.obj
+      - MM444_BP51956_FMA3837_First posterior ventricular branch of right coronary artery.obj
+      - MM443_BP51952_FMA3851_Atrioventricular node branch of right coronary artery.obj
+  artery_left_main
+      Left coronary stem  [FMA4685]
+      - MM557_BP58405_FMA4685_Stem of left coronary artery.obj
+  valve_mitral
+      Mitral valve  [FMA7242, FMA7243, FMA9498]
+      - MM541_BP51877_FMA7242_Anterior leaflet of mitral valve.obj
+      - MM543_BP51877_FMA7242_Anterior leaflet of mitral valve.obj
+      - MM542_BP51793_FMA7243_Posterior leaflet of mitral valve.obj
+      - MM544_BP51793_FMA7243_Posterior leaflet of mitral valve.obj
+      - MM529_BP51899_FMA9498_Fibrous ring of mitral valve.obj
+  valve_tricuspid
+      Tricuspid valve  [FMA7238, FMA7239, FMA7240, FMA85237]
+      - MM569_BP51930_FMA7238_Anterior leaflet of tricuspid valve.obj
+      - MM575_BP51930_FMA7238_Anterior leaflet of tricuspid valve.obj
+      - MM570_BP51920_FMA7239_Posterior leaflet of tricuspid valve.obj
+      - MM571_BP51920_FMA7239_Posterior leaflet of tricuspid valve.obj
+      - MM573_BP51943_FMA7240_Septal leaflet of tricuspid valve.obj
+      - MM574_BP51943_FMA7240_Septal leaflet of tricuspid valve.obj
+      - MM572_BP51918_FMA85237_Anulus proper of tricuspid valve.obj
+  valve_aortic
+      Aortic valve  [FMA7252, FMA7253, FMA7254, FMA9502]
+      - MM519_BP51879_FMA7252_Right posterior cusp of aortic valve.obj
+      - MM524_BP51927_FMA7253_Anterior cusp of aortic valve.obj
+      - MM521_BP51864_FMA7254_Left posterior cusp of aortic valve.obj
+      - MM517_BP51924_FMA9502_Fibrous ring of aortic valve.obj
+      - MM520_BP51924_FMA9502_Fibrous ring of aortic valve.obj
+  valve_pulmonary
+      Pulmonary valve  [FMA7247, FMA7249, FMA7250]
+      - MM606_BP51921_FMA7247_Left anterior cusp of pulmonary valve.obj
+      - MM604_BP51948_FMA7249_Right anterior cusp of pulmonary valve.obj
+      - MM605_BP51935_FMA7250_Posterior cusp of pulmonary valve.obj
+  cond_left_bundle
+      Left bundle branch  [FMA9488, FMA9489, FMA83331]
+      - MM580_BP51788_FMA9488_Anterior division of left branch of atrioventricular bundle.obj
+      - MM578_BP51790_FMA9489_Posterior division of left branch of atrioventricular bundle.obj
+      - MM579_BP51789_FMA83331_Septal division of left branch of atrioventricular bundle.obj
+  cond_right_bundle
+      Right bundle branch  [FMA9486]
+      - MM577_BP51824_FMA9486_Right branch of atrioventricular bundle.obj
+  cond_nodes
+      Sinoatrial & atrioventricular nodes  [FMA9477, FMA9478, FMA9484, FMA9480, FMA9482, FMA9483]
+      - MM419_BP51825_FMA9477_Sinuatrial node.obj
+      - MM587_BP51791_FMA9478_Atrioventricular node.obj
+      - MM586_BP51792_FMA9484_Atrioventricular bundle.obj
+      - MM585_BP51875_FMA9480_Anterior internodal tract.obj
+      - MM583_BP51818_FMA9482_Middle internodal tract.obj
+      - MM582_BP51827_FMA9483_Posterior internodal tract.obj

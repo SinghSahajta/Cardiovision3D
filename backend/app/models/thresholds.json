@@ -1,0 +1,22 @@
+{
+  "CAD": {
+    "tuned": 0.6595,
+    "default": 0.5,
+    "selection": "Youden's J on inner CV folds"
+  },
+  "LAD": {
+    "tuned": 0.5286,
+    "default": 0.5,
+    "selection": "Youden's J on inner CV folds"
+  },
+  "LCX": {
+    "tuned": 0.3535,
+    "default": 0.5,
+    "selection": "Youden's J on inner CV folds"
+  },
+  "RCA": {
+    "tuned": 0.2288,
+    "default": 0.5,
+    "selection": "Youden's J on inner CV folds"
+  }
+}

@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Node dependencies & builds
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+*.log
+
+# Downloads from the superseded anatomy pipeline. build_anatomy.py now reads
+# `heart-beat parts/` directly, so this 62 MB archive is no longer used by
+# anything - but it is left on disk rather than deleted, because re-fetching it
+# is a slow download to undo a mistake.
+.cache/
+
+# Test caches
+.pytest_cache/
+
+# OCR assets fetched by tools/fetch_ocr_assets.py (third-party build artefacts)
+frontend/public/ocr/

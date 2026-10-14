@@ -1,0 +1,654 @@
+{
+ "attribution": "BodyParts3D, (c) The Database Center for Life Science licensed under CC Attribution 4.0 International",
+ "source": "BodyParts3D heart part set, compatibility version heart5.0i",
+ "note": "Every node is BodyParts3D mesh geometry, decimated but not reconstructed. Coronary arteries carry morph target 0, a uniform contraction toward the vessel's own medial axis used to show predicted stenosis; it is a severity cue and implies no lesion position. This donor is left-dominant, so the posterior interventricular branch is grouped with the LCX.",
+ "normalisation": {
+  "center_mm": [
+   21.5071,
+   -122.8498,
+   1225.965
+  ],
+  "scale": 0.010824950189226037,
+  "transform": [
+   [
+    1.0,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ],
+   [
+    0.0,
+    -1.0,
+    0.0
+   ]
+  ],
+  "axes": "+x = patient left, +y = superior, +z = anterior",
+  "source_axes": "BodyParts3D LPS: +x left, +y posterior, +z superior"
+ },
+ "narrow_fraction": 0.45,
+ "vessel_nodes": {
+  "LAD": "artery_LAD",
+  "LCX": "artery_LCX",
+  "RCA": "artery_RCA"
+ },
+ "nodes": {
+  "myo_lv_free": {
+   "label": "Left ventricle, free wall",
+   "anatomical_name": "Left ventricle, free wall",
+   "group": "myocardium",
+   "layer": "core",
+   "vessel": null,
+   "fma_ids": [
+    "FMA84850"
+   ],
+   "source_files": [
+    "MM474_BP51876_FMA84850_Free wall of left ventricle.obj",
+    "MM614_BP51876_FMA84850_Free wall of left ventricle.obj",
+    "MM615_BP51876_FMA84850_Free wall of left ventricle.obj",
+    "MM616_BP51876_FMA84850_Free wall of left ventricle.obj",
+    "MM620_BP51876_FMA84850_Free wall of left ventricle.obj",
+    "MM621_BP51876_FMA84850_Free wall of left ventricle.obj",
+    "MM622_BP51876_FMA84850_Free wall of left ventricle.obj",
+    "MM623_BP51876_FMA84850_Free wall of left ventricle.obj",
+    "MM624_BP51876_FMA84850_Free wall of left ventricle.obj",
+    "MM626_BP51876_FMA84850_Free wall of left ventricle.obj",
+    "MM627_BP51876_FMA84850_Free wall of left ventricle.obj",
+    "MM628_BP51876_FMA84850_Free wall of left ventricle.obj",
+    "MM631_BP51876_FMA84850_Free wall of left ventricle.obj"
+   ],
+   "triangles": 29703,
+   "anchor": [
+    0.16756,
+    -0.34385,
+    0.09429
+   ],
+   "centroid": [
+    0.26695,
+    -0.19652,
+    0.02003
+   ],
+   "radius": 0.49287
+  },
+  "myo_lv_septal": {
+   "label": "Left ventricle, septal wall",
+   "anatomical_name": "Left ventricle, septal wall",
+   "group": "myocardium",
+   "layer": "core",
+   "vessel": null,
+   "fma_ids": [
+    "FMA9345"
+   ],
+   "source_files": [
+    "MM613_BP52013_FMA9345_Septal wall of left ventricle.obj",
+    "MM618_BP52013_FMA9345_Septal wall of left ventricle.obj",
+    "MM619_BP52013_FMA9345_Septal wall of left ventricle.obj",
+    "MM625_BP52013_FMA9345_Septal wall of left ventricle.obj",
+    "MM629_BP52013_FMA9345_Septal wall of left ventricle.obj",
+    "MM630_BP52013_FMA9345_Septal wall of left ventricle.obj"
+   ],
+   "triangles": 14474,
+   "anchor": [
+    0.10554,
+    -0.18917,
+    0.19072
+   ],
+   "centroid": [
+    0.11175,
+    -0.18985,
+    0.1849
+   ],
+   "radius": 0.43787
+  },
+  "myo_septum": {
+   "label": "Interventricular septum",
+   "anatomical_name": "Interventricular septum",
+   "group": "myocardium",
+   "layer": "core",
+   "vessel": null,
+   "fma_ids": [
+    "FMA7134",
+    "FMA83468"
+   ],
+   "source_files": [
+    "MM594_BP51936_FMA7134_Muscular part of interventricular septum.obj",
+    "MM600_BP51936_FMA7134_Muscular part of interventricular septum.obj",
+    "MM568_BP51893_FMA83468_Membranous part of interventricular septum proper.obj"
+   ],
+   "triangles": 7078,
+   "anchor": [
+    -0.00729,
+    -0.08427,
+    0.06519
+   ],
+   "centroid": [
+    -0.02433,
+    -0.09725,
+    0.0733
+   ],
+   "radius": 0.54913
+  },
+  "myo_rv_inflow": {
+   "label": "Right ventricle, inflow wall",
+   "anatomical_name": "Right ventricle, inflow wall",
+   "group": "myocardium",
+   "layer": "core",
+   "vessel": null,
+   "fma_ids": [
+    "FMA49207"
+   ],
+   "source_files": [
+    "MM598_BP51861_FMA49207_Wall of inflow part of right ventricle.obj"
+   ],
+   "triangles": 6613,
+   "anchor": [
+    -0.07567,
+    -0.33011,
+    0.40781
+   ],
+   "centroid": [
+    -0.03777,
+    -0.23874,
+    0.31423
+   ],
+   "radius": 0.42915
+  },
+  "myo_rv_outflow": {
+   "label": "Right ventricle, outflow wall",
+   "anatomical_name": "Right ventricle, outflow wall",
+   "group": "myocardium",
+   "layer": "core",
+   "vessel": null,
+   "fma_ids": [
+    "FMA49208"
+   ],
+   "source_files": [
+    "MM538_BP51878_FMA49208_Wall of outflow part of right ventricle.obj"
+   ],
+   "triangles": 1442,
+   "anchor": [
+    0.06677,
+    0.2053,
+    0.4324
+   ],
+   "centroid": [
+    0.06895,
+    0.13345,
+    0.33262
+   ],
+   "radius": 0.31812
+  },
+  "atrium_left": {
+   "label": "Left atrium",
+   "anatomical_name": "Left atrium",
+   "group": "atrium",
+   "layer": "core",
+   "vessel": null,
+   "fma_ids": [
+    "FMA9306",
+    "FMA84095",
+    "FMA9562",
+    "FMA49292",
+    "FMA9542",
+    "FMA9547"
+   ],
+   "source_files": [
+    "MM456_BP51862_FMA9306_Lateral wall of left atrium.obj",
+    "MM458_BP51886_FMA84095_Septal wall of left atrium.obj",
+    "MM460_BP51866_FMA9562_Superior wall of left atrium.obj",
+    "MM632_BP51844_FMA49292_Anterior wall proper of left atrium.obj",
+    "MM633_BP51882_FMA9542_Posterior wall of left atrium.obj",
+    "MM459_BP51840_FMA9547_Wall of left auricle.obj"
+   ],
+   "triangles": 15719,
+   "anchor": [
+    0.00221,
+    0.18375,
+    -0.23022
+   ],
+   "centroid": [
+    0.00624,
+    0.17371,
+    -0.26165
+   ],
+   "radius": 0.65423
+  },
+  "atrium_right": {
+   "label": "Right atrium",
+   "anatomical_name": "Right atrium",
+   "group": "atrium",
+   "layer": "core",
+   "vessel": null,
+   "fma_ids": [
+    "FMA49285",
+    "FMA49286",
+    "FMA84094",
+    "FMA49299"
+   ],
+   "source_files": [
+    "MM559_BP51843_FMA49285_Anterior wall proper of right atrium.obj",
+    "MM560_BP51837_FMA49286_Lateral wall proper of right atrium.obj",
+    "MM590_BP51888_FMA84094_Septal wall of right atrium.obj",
+    "MM591_BP51888_FMA84094_Septal wall of right atrium.obj",
+    "MM461_BP51819_FMA49299_Wall of right auricle proper.obj"
+   ],
+   "triangles": 13471,
+   "anchor": [
+    -0.23267,
+    0.10441,
+    -0.00804
+   ],
+   "centroid": [
+    -0.38303,
+    0.06016,
+    -0.01348
+   ],
+   "radius": 0.53929
+  },
+  "aorta": {
+   "label": "Ascending aorta",
+   "anatomical_name": "Ascending aorta",
+   "group": "great_vessel",
+   "layer": "core",
+   "vessel": null,
+   "fma_ids": [
+    "FMA23733",
+    "FMA15098"
+   ],
+   "source_files": [
+    "MM506_BP51985_FMA23733_Ascending aorta proper.obj",
+    "MM558_BP51975_FMA15098_Wall of bulb of aorta.obj"
+   ],
+   "triangles": 4695,
+   "anchor": [
+    -0.17807,
+    0.23257,
+    -0.00699
+   ],
+   "centroid": [
+    -0.08908,
+    0.28118,
+    0.00012
+   ],
+   "radius": 0.3322
+  },
+  "pulm_trunk": {
+   "label": "Pulmonary trunk",
+   "anatomical_name": "Pulmonary trunk",
+   "group": "great_vessel",
+   "layer": "core",
+   "vessel": null,
+   "fma_ids": [
+    "FMA15086"
+   ],
+   "source_files": [
+    "MM607_BP58392_FMA15086_Pulmonary trunk proper.obj"
+   ],
+   "triangles": 2915,
+   "anchor": [
+    -0.01804,
+    0.45135,
+    0.09572
+   ],
+   "centroid": [
+    0.06994,
+    0.46727,
+    0.14635
+   ],
+   "radius": 0.3183
+  },
+  "artery_LAD": {
+   "label": "Left anterior descending",
+   "anatomical_name": "trunk of the anterior interventricular branch with its diagonal, second and third anterior, and septal branches",
+   "group": "artery",
+   "layer": "core",
+   "vessel": "LAD",
+   "fma_ids": [
+    "FMA74912",
+    "FMA3860",
+    "FMA3888",
+    "FMA3890",
+    "FMA3893"
+   ],
+   "source_files": [
+    "MM420_BP51969_FMA74912_Trunk of anterior interventricular branch of left coronary artery.obj",
+    "MM424_BP51969_FMA74912_Trunk of anterior interventricular branch of left coronary artery.obj",
+    "MM425_BP51969_FMA74912_Trunk of anterior interventricular branch of left coronary artery.obj",
+    "MM422_BP51972_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+    "MM423_BP51965_FMA3888_Second left anterior branch of anterior interventricular branch of left coronary artery.obj",
+    "MM432_BP51962_FMA3890_Third left anterior branch of anterior interventricular branch of left coronary artery.obj",
+    "MM431_BP51970_FMA3893_Anterior septal branch of anterior interventricular artery.obj",
+    "MM433_BP51970_FMA3893_Anterior septal branch of anterior interventricular artery.obj",
+    "MM434_BP51970_FMA3893_Anterior septal branch of anterior interventricular artery.obj"
+   ],
+   "triangles": 13574,
+   "anchor": [
+    0.29277,
+    0.1069,
+    0.27837
+   ],
+   "centroid": [
+    0.3094,
+    0.00652,
+    0.27654
+   ],
+   "radius": 0.45769
+  },
+  "artery_LCX": {
+   "label": "Left circumflex",
+   "anatomical_name": "trunk of the circumflex branch with the left marginal, first posterior ventricular and posterior interventricular branches",
+   "group": "artery",
+   "layer": "core",
+   "vessel": "LCX",
+   "fma_ids": [
+    "FMA74923",
+    "FMA3902",
+    "FMA3914",
+    "FMA79742"
+   ],
+   "source_files": [
+    "MM426_BP51973_FMA74923_Trunk of circumflex branch of left coronary artery.obj",
+    "MM635_BP51973_FMA74923_Trunk of circumflex branch of left coronary artery.obj",
+    "MM610_BP51926_FMA3902_Left marginal artery.obj",
+    "MM428_BP51937_FMA3914_First posterior ventricular branch of circumflex coronary artery.obj",
+    "MM430_BP58390_FMA79742_Trunk of posterior interventricular branch of left coronary artery.obj"
+   ],
+   "triangles": 20272,
+   "anchor": [
+    0.12617,
+    -0.14543,
+    -0.40345
+   ],
+   "centroid": [
+    0.1998,
+    -0.16681,
+    -0.28344
+   ],
+   "radius": 0.67697
+  },
+  "artery_RCA": {
+   "label": "Right coronary artery",
+   "anatomical_name": "trunk of the right coronary artery with its conus, sinoatrial nodal, marginal, atrioventricular nodal, ventricular and atrial branches",
+   "group": "artery",
+   "layer": "core",
+   "vessel": "RCA",
+   "fma_ids": [
+    "FMA3802",
+    "FMA3807",
+    "FMA3815",
+    "FMA3818",
+    "FMA3823",
+    "FMA3829",
+    "FMA3837",
+    "FMA3851"
+   ],
+   "source_files": [
+    "MM436_BP51977_FMA3802_Trunk of right coronary artery.obj",
+    "MM439_BP51977_FMA3802_Trunk of right coronary artery.obj",
+    "MM556_BP51977_FMA3802_Trunk of right coronary artery.obj",
+    "MM441_BP51955_FMA3807_Conus branch of right coronary artery.obj",
+    "MM437_BP51980_FMA3815_First anterior ventricular branch of right coronary artery.obj",
+    "MM440_BP51950_FMA3818_Marginal branch of right coronary artery.obj",
+    "MM438_BP51922_FMA3823_Sinoatrial nodal branch of right coronary artery.obj",
+    "MM445_BP51957_FMA3829_Anterior atrial branch of right coronary artery.obj",
+    "MM444_BP51956_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+    "MM443_BP51952_FMA3851_Atrioventricular node branch of right coronary artery.obj"
+   ],
+   "triangles": 13764,
+   "anchor": [
+    -0.37127,
+    -0.13147,
+    0.28563
+   ],
+   "centroid": [
+    -0.21239,
+    -0.14414,
+    0.21392
+   ],
+   "radius": 0.60766
+  },
+  "artery_left_main": {
+   "label": "Left coronary stem",
+   "anatomical_name": "stem of the left coronary artery, proximal to the LAD/LCX bifurcation and so attributed to neither",
+   "group": "artery",
+   "layer": "core",
+   "vessel": null,
+   "fma_ids": [
+    "FMA4685"
+   ],
+   "source_files": [
+    "MM557_BP58405_FMA4685_Stem of left coronary artery.obj"
+   ],
+   "triangles": 500,
+   "anchor": [
+    0.12149,
+    0.25964,
+    0.01297
+   ],
+   "centroid": [
+    0.13354,
+    0.27071,
+    0.00229
+   ],
+   "radius": 0.059
+  },
+  "valve_mitral": {
+   "label": "Mitral valve",
+   "anatomical_name": "Mitral valve",
+   "group": "valve",
+   "layer": "valves",
+   "vessel": null,
+   "fma_ids": [
+    "FMA7242",
+    "FMA7243",
+    "FMA9498"
+   ],
+   "source_files": [
+    "MM541_BP51877_FMA7242_Anterior leaflet of mitral valve.obj",
+    "MM543_BP51877_FMA7242_Anterior leaflet of mitral valve.obj",
+    "MM542_BP51793_FMA7243_Posterior leaflet of mitral valve.obj",
+    "MM544_BP51793_FMA7243_Posterior leaflet of mitral valve.obj",
+    "MM529_BP51899_FMA9498_Fibrous ring of mitral valve.obj"
+   ],
+   "triangles": 17810,
+   "anchor": [
+    0.12424,
+    -0.11701,
+    -0.21067
+   ],
+   "centroid": [
+    0.0529,
+    -0.07461,
+    -0.20337
+   ],
+   "radius": 0.23325
+  },
+  "valve_tricuspid": {
+   "label": "Tricuspid valve",
+   "anatomical_name": "Tricuspid valve",
+   "group": "valve",
+   "layer": "valves",
+   "vessel": null,
+   "fma_ids": [
+    "FMA7238",
+    "FMA7239",
+    "FMA7240",
+    "FMA85237"
+   ],
+   "source_files": [
+    "MM569_BP51930_FMA7238_Anterior leaflet of tricuspid valve.obj",
+    "MM575_BP51930_FMA7238_Anterior leaflet of tricuspid valve.obj",
+    "MM570_BP51920_FMA7239_Posterior leaflet of tricuspid valve.obj",
+    "MM571_BP51920_FMA7239_Posterior leaflet of tricuspid valve.obj",
+    "MM573_BP51943_FMA7240_Septal leaflet of tricuspid valve.obj",
+    "MM574_BP51943_FMA7240_Septal leaflet of tricuspid valve.obj",
+    "MM572_BP51918_FMA85237_Anulus proper of tricuspid valve.obj"
+   ],
+   "triangles": 9491,
+   "anchor": [
+    -0.15725,
+    -0.11242,
+    0.24318
+   ],
+   "centroid": [
+    -0.15908,
+    -0.13246,
+    0.17947
+   ],
+   "radius": 0.26244
+  },
+  "valve_aortic": {
+   "label": "Aortic valve",
+   "anatomical_name": "Aortic valve",
+   "group": "valve",
+   "layer": "valves",
+   "vessel": null,
+   "fma_ids": [
+    "FMA7252",
+    "FMA7253",
+    "FMA7254",
+    "FMA9502"
+   ],
+   "source_files": [
+    "MM519_BP51879_FMA7252_Right posterior cusp of aortic valve.obj",
+    "MM524_BP51927_FMA7253_Anterior cusp of aortic valve.obj",
+    "MM521_BP51864_FMA7254_Left posterior cusp of aortic valve.obj",
+    "MM517_BP51924_FMA9502_Fibrous ring of aortic valve.obj",
+    "MM520_BP51924_FMA9502_Fibrous ring of aortic valve.obj"
+   ],
+   "triangles": 4726,
+   "anchor": [
+    0.0163,
+    0.13374,
+    -0.02524
+   ],
+   "centroid": [
+    0.0036,
+    0.13613,
+    -0.02129
+   ],
+   "radius": 0.19599
+  },
+  "valve_pulmonary": {
+   "label": "Pulmonary valve",
+   "anatomical_name": "Pulmonary valve",
+   "group": "valve",
+   "layer": "valves",
+   "vessel": null,
+   "fma_ids": [
+    "FMA7247",
+    "FMA7249",
+    "FMA7250"
+   ],
+   "source_files": [
+    "MM606_BP51921_FMA7247_Left anterior cusp of pulmonary valve.obj",
+    "MM604_BP51948_FMA7249_Right anterior cusp of pulmonary valve.obj",
+    "MM605_BP51935_FMA7250_Posterior cusp of pulmonary valve.obj"
+   ],
+   "triangles": 5684,
+   "anchor": [
+    0.09423,
+    0.26505,
+    0.26622
+   ],
+   "centroid": [
+    0.09452,
+    0.26216,
+    0.26087
+   ],
+   "radius": 0.16456
+  },
+  "cond_left_bundle": {
+   "label": "Left bundle branch",
+   "anatomical_name": "anterior, posterior and septal divisions of the left branch of the atrioventricular bundle",
+   "group": "conduction",
+   "layer": "conduction",
+   "vessel": null,
+   "fma_ids": [
+    "FMA9488",
+    "FMA9489",
+    "FMA83331"
+   ],
+   "source_files": [
+    "MM580_BP51788_FMA9488_Anterior division of left branch of atrioventricular bundle.obj",
+    "MM578_BP51790_FMA9489_Posterior division of left branch of atrioventricular bundle.obj",
+    "MM579_BP51789_FMA83331_Septal division of left branch of atrioventricular bundle.obj"
+   ],
+   "triangles": 4007,
+   "anchor": [
+    0.08117,
+    -0.13775,
+    0.15454
+   ],
+   "centroid": [
+    0.17617,
+    -0.1274,
+    0.11041
+   ],
+   "radius": 0.28994
+  },
+  "cond_right_bundle": {
+   "label": "Right bundle branch",
+   "anatomical_name": "Right bundle branch",
+   "group": "conduction",
+   "layer": "conduction",
+   "vessel": null,
+   "fma_ids": [
+    "FMA9486"
+   ],
+   "source_files": [
+    "MM577_BP51824_FMA9486_Right branch of atrioventricular bundle.obj"
+   ],
+   "triangles": 3499,
+   "anchor": [
+    0.06848,
+    -0.05862,
+    0.27067
+   ],
+   "centroid": [
+    0.02491,
+    -0.09991,
+    0.25559
+   ],
+   "radius": 0.25635
+  },
+  "cond_nodes": {
+   "label": "Sinoatrial & atrioventricular nodes",
+   "anatomical_name": "sinuatrial node, atrioventricular node, atrioventricular bundle and the anterior, middle and posterior internodal tracts",
+   "group": "conduction",
+   "layer": "conduction",
+   "vessel": null,
+   "fma_ids": [
+    "FMA9477",
+    "FMA9478",
+    "FMA9484",
+    "FMA9480",
+    "FMA9482",
+    "FMA9483"
+   ],
+   "source_files": [
+    "MM419_BP51825_FMA9477_Sinuatrial node.obj",
+    "MM587_BP51791_FMA9478_Atrioventricular node.obj",
+    "MM586_BP51792_FMA9484_Atrioventricular bundle.obj",
+    "MM585_BP51875_FMA9480_Anterior internodal tract.obj",
+    "MM583_BP51818_FMA9482_Middle internodal tract.obj",
+    "MM582_BP51827_FMA9483_Posterior internodal tract.obj"
+   ],
+   "triangles": 5601,
+   "anchor": [
+    -0.22461,
+    0.0938,
+    -0.08121
+   ],
+   "centroid": [
+    -0.33826,
+    0.10098,
+    -0.03392
+   ],
+   "radius": 0.39805
+  }
+ }
+}

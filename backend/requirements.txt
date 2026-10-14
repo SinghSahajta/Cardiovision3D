@@ -1,0 +1,19 @@
+# Backend serving dependencies.
+#
+# Versions are pinned because joblib artifacts are version-sensitive: scikit-learn
+# and lightgbm can refuse to unpickle a model saved by a different minor version.
+# Retrain (python ml/src/train.py) after changing any pin here.
+#
+# Note: `shap` is deliberately NOT a dependency. Attributions come from LightGBM's
+# native TreeSHAP (`pred_contrib=True`), the same Lundberg et al. algorithm that
+# shap.TreeExplainer wraps for LightGBM models, computed by the served booster.
+fastapi==0.143.0
+uvicorn[standard]==0.54.0
+pydantic==2.12.5
+pydantic-settings==2.15.0
+joblib==1.6.0
+numpy==2.4.4
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+lightgbm==4.7.0

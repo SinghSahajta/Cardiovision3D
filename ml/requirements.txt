@@ -1,0 +1,11 @@
+# Training and evaluation dependencies.
+# Keep the numpy/pandas/scikit-learn/lightgbm pins identical to
+# backend/requirements.txt so the serialized models load in the API.
+numpy==2.4.4
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+lightgbm==4.7.0
+joblib==1.6.0
+openpyxl==3.1.5
+matplotlib==3.10.8
