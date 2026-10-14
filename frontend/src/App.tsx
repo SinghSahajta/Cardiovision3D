@@ -130,6 +130,14 @@ export default function App() {
     // without it would mean rendering a confident percentage built on the
     // cohort's most common answer standing in for this patient's.
     if (coverage.blocked) {
+      // Cleared here rather than derived at render on purpose. Deriving
+      // (`coverage.blocked ? null : prediction`) would leave the previous
+      // patient's percentage in state, so answering the blocking question
+      // would flash a stale risk figure for the length of the debounce before
+      // the new one lands. A wrong number on screen for 220ms is not
+      // acceptable in a clinical readout, so the cascading render is the
+      // cheaper trade.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setPrediction(null);
       return;
     }

@@ -46,12 +46,17 @@ export function ShapWaterfall({ attributions, baseValue, shapSum }: Props) {
       });
     }
 
+    // Built with a plain loop rather than .map: the running total is a
+    // cumulative sum, and mutating a captured accumulator from inside a
+    // callback during render is exactly what react-hooks/immutability forbids.
+    const out: ((typeof rows)[number] & { from: number; to: number })[] = [];
     let running = baseValue;
-    return rows.map((r) => {
+    for (const r of rows) {
       const from = running;
       running += r.value;
-      return { ...r, from, to: running };
-    });
+      out.push({ ...r, from, to: running });
+    }
+    return out;
   }, [attributions, baseValue, shapSum]);
 
   const final = baseValue + shapSum;

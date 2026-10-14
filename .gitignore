@@ -15,6 +15,12 @@ frontend/node_modules/
 frontend/dist/
 frontend/.vite/
 
+# Local environment overrides. .env.example is tracked as the template; a real
+# .env holds the deployed backend URL and must never be committed.
+.env
+.env.*
+!.env.example
+
 # IDE & OS files
 .vscode/
 .idea/

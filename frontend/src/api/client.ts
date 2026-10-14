@@ -29,7 +29,7 @@ async function get<T>(path: string, signal?: AbortSignal): Promise<T> {
   let res: Response;
   try {
     res = await fetch(`${API_BASE}${path}`, { signal });
-  } catch (cause) {
+  } catch {
     throw new ApiError(
       `Cannot reach the API at ${API_BASE}. Start it with: ` +
         `python -m uvicorn backend.app.main:app --port 8000`,

@@ -1,0 +1,19 @@
+# Only the Vite app in frontend/ is deployed to Vercel. Everything below is
+# either a build input that has already been baked into frontend/public, or a
+# Python service Vercel does not host - uploading it just slows every deploy.
+
+# 28 MB of BodyParts3D source meshes. tools/build_anatomy.py consumed these
+# once to produce frontend/public/models/anatomy.glb, which IS committed.
+heart-beat parts/
+
+# FastAPI service and the training pipeline. The frontend reaches the API over
+# VITE_API_BASE, so the backend is deployed separately (see README).
+backend/
+ml/
+tools/
+docs/
+Screenshots/
+
+.cache/
+.pytest_cache/
+__pycache__/

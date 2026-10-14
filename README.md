@@ -713,6 +713,78 @@ TreeSHAP rather than the `shap` package.
 
 ---
 
+## Deployment
+
+The two halves deploy separately, and they have to: the frontend is a static Vite
+bundle, while the API loads LightGBM, scikit-learn, scipy and pandas to serve a
+prediction. Installed unzipped that dependency set runs past Vercel's serverless
+function size limit, so **the backend does not go on Vercel.** Put it on a host that
+runs a long-lived container - Render, Railway, Fly.io, a VM - using
+`backend/Dockerfile`, which already exists and builds from the repository root.
+
+### Frontend on Vercel
+
+`vercel.json` at the repository root configures the whole build, so importing the
+repo needs no dashboard settings:
+
+```json
+{
+  "buildCommand": "npm --prefix frontend run build",
+  "installCommand": "npm --prefix frontend ci",
+  "outputDirectory": "frontend/dist"
+}
+```
+
+Set one environment variable in the Vercel project, for every environment you intend
+to use:
+
+| Variable | Value |
+| :--- | :--- |
+| `VITE_API_BASE` | the deployed API origin, e.g. `https://cardiovision-api.onrender.com` |
+
+It is read at `src/api/client.ts:15` and **baked in at build time**, not fetched at
+runtime - Vite inlines `import.meta.env` during the build. Changing it therefore
+requires a redeploy, not just a restart.
+
+Without it the bundle falls back to `http://127.0.0.1:8000`, and a browser on an
+`https://` page will refuse the request as mixed content. The dashboard still loads;
+every prediction fails.
+
+### Then point the API back at the frontend
+
+`cors_origins` in `backend/app/core/config.py` lists localhost only. The deployed
+site is a different origin, so the browser will block it until that host sets:
+
+```bash
+CORS_ORIGINS='["https://your-project.vercel.app"]'
+```
+
+Vercel gives every preview deployment its own generated subdomain, so if you want
+previews to work too, add the production domain you have assigned rather than
+relying on the per-deployment URL.
+
+### What is deliberately not deployed
+
+`.vercelignore` keeps `heart-beat parts/` (28 MB of BodyParts3D source meshes),
+`backend/`, `ml/` and `tools/` out of the upload. The meshes were already consumed
+once by `tools/build_anatomy.py` to produce `frontend/public/models/anatomy.glb`,
+which **is** committed - so a clone builds the 3D scene with no download step.
+
+`frontend/public/ocr/` is gitignored (19 MB of third-party tesseract WASM and
+language data). Its absence is handled rather than fatal: `hasLocalOcrAssets()` in
+`src/lib/extract/readDocument.ts` probes for it and tesseract.js falls back to its
+CDN, with the UI saying which is about to happen. Run `python
+tools/fetch_ocr_assets.py` if you want OCR to stay offline.
+
+**Do not add a catch-all SPA rewrite.** There is no router in this app - navigation
+is scroll-based over one document - so nothing needs it, and a
+`"/(.*)" -> "/index.html"` rule would actively break things: the OCR probe above is
+a `HEAD` request that would start returning `200` with an HTML body, so the app
+would believe local assets are present and then hand tesseract an HTML page instead
+of a WASM binary.
+
+---
+
 ## Reproducibility
 
 - `random_state=42` throughout; `--seed` to change it.
